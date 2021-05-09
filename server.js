@@ -42,7 +42,7 @@ app.get('/', function (req, res) {
 app.listen(addConfig.port);
 console.log(`App is running in the URL:${addConfig.port}`);
 
-// DB connection.
+// DB connection with external config file.
 // mongoose.connect(MongoDB_connection_String, Options_object, callback-function);
 mongoose.connect(
 	mangoConnect.mongooseConnect,
